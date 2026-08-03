@@ -89,7 +89,7 @@ public class RelogioService {
         OrdenacaoRelogios ordenacao = OrdenacaoRelogios.fromApi(ordenar);
 
         Sort sort = switch (ordenacao){
-            case NEWEST -> Sort.by(Sort.Direction.DESC, "criadoEM");
+            case NEWEST -> Sort.by(Sort.Direction.DESC, "criadoEm");
             case PRICE_ASC -> Sort.by(Sort.Direction.ASC, "precoEmCentavos");
             case PRICE_DESC -> Sort.by(Sort.Direction.DESC, "precoEmCentavos");
             case DIAMETER_ASC -> Sort.by(Sort.Direction.ASC, "diametroMm");
